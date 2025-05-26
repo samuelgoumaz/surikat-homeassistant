@@ -6,6 +6,9 @@
     "flask",
     "paho-mqtt",
   ],
+  "frontend": {
+    "javascript": ["www/card-skeleton.js"]
+  },
   "dependencies": ["frigate"],
   "codeowners": ["@samuelgoumaz"],
   "iot_class": "local_polling"
