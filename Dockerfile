@@ -9,4 +9,6 @@ RUN apk add --no-cache \
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
+COPY custom_components /config/custom_components
+
 CMD [ "/run.sh" ]

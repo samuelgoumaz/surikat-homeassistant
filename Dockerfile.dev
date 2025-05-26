@@ -12,4 +12,6 @@ RUN apt-get update && apt-get install -y \
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
+COPY custom_components /app/custom_components
+
 CMD [ "/run.sh" ]
