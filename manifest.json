@@ -1,7 +1,7 @@
 {
   "domain": "surikat.ch",
   "name": "Surikat plugin for homeassistant",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "requirements": [
     "flask",
     "paho-mqtt",
