@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+echo "Listing contents of /config before write test:"
+ls -l /config || echo "Failed to list /config"
+
 echo "Testing write access to /config..."
 
 if touch /config/write_test.txt 2>/dev/null; then
