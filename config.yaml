@@ -1,7 +1,7 @@
 # config.yaml (add-on)
 name: "Surikat Homeassistant"
 description: "Surikat plugin for Homeassistant"
-version: "1.0.10"
+version: "1.0.11"
 slug: "surikat"
 init: false
 arch:
@@ -26,5 +26,6 @@ schema:
   mqtt_user: str
   mqtt_password: str
 map:
-  config: /config  # <== Cette ligne pour monter le dossier config Home Assistant
-  readonly: false
+  config:
+    target: /config
+    readonly: false
