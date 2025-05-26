@@ -24,9 +24,3 @@ schema:
   mqtt_topic: str
   mqtt_user: str
   mqtt_password: str
-environment:
-  MQTT_HOST: !env_var mqtt_host
-  MQTT_PORT: !env_var mqtt_port
-  MQTT_TOPIC: !env_var mqtt_topic
-  MQTT_USER: !env_var mqtt_user
-  MQTT_PASSWORD: !env_var mqtt_password
