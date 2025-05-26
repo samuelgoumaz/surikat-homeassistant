@@ -1,6 +1,6 @@
 name: "Surikat Homeassistant"
 description: "Surikat plugin for Homeassistant"
-version: "1.0.4"
+version: "1.0.5"
 slug: "surikat"
 init: false
 arch:
