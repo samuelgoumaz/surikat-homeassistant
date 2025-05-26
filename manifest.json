@@ -1,0 +1,12 @@
+{
+  "domain": "surikat.ch",
+  "name": "Surikat plugin for homeassistant",
+  "version": "1.0.0",
+  "requirements": [
+    "flask",
+    "paho-mqtt",
+  ],
+  "dependencies": ["frigate"],
+  "codeowners": ["@samuelgoumaz"],
+  "iot_class": "local_polling"
+}
