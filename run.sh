@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
+set -e
 
 echo "Copying custom component to /config/custom_components/surikat"
 
+# Crée le dossier cible s’il n’existe pas
 mkdir -p /config/custom_components/surikat
-cp -r /app/custom_components/surikat/* /config/custom_components/surikat/
 
-# Optionnel : tu peux déclencher un restart de Home Assistant via API ici si besoin
+# Copie récursive des fichiers du custom component depuis /app vers /config
+cp -r /custom_components/surikat/* /config/custom_components/surikat/
 
-# Lancer ton service / script principal
-exec python3 /app/main.py
+echo "Custom component copied successfully."
