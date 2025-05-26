@@ -6,11 +6,11 @@ ls -l /config || echo "Failed to list /config"
 
 echo "Testing write access to /config..."
 
-if touch /config/write_test.txt 2>/dev/null; then
+if touch /config/custom_components/write_test.txt 2>/dev/null; then
   echo "Write test PASSED"
-  rm /config/write_test.txt
+  rm /config/custom_components/write_test.txt
 else
-  echo "Write test FAILED: /config is read-only"
+  echo "Write test FAILED: /config/custom_components is read-only"
   exit 1
 fi
 
