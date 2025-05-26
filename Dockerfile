@@ -6,10 +6,6 @@ RUN apk add --no-cache \
     python3 \
     py3-pip
 
-# Copie le fichier requirements et installation des dépendances Python
-COPY requirements.txt /requirements.txt
-RUN pip install --no-cache-dir -r /requirements.txt
-
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 

@@ -8,10 +8,6 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copie le fichier requirements et installation des dépendances Python
-COPY requirements.txt /requirements.txt
-RUN pip install --no-cache-dir -r /requirements.txt
-
 # Copie et rend exécutable le script d'entrée
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
