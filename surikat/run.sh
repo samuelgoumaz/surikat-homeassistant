@@ -5,7 +5,7 @@ set -e
 echo "[INFO] Surikat Add-on démarré"
 
 # === Chemins relatifs
-SRC_COMPONENT="./custom_components/surikat"
+SRC_COMPONENT="./custom_components"
 DST_COMPONENT="/config/custom_components/surikat"
 
 # === Vérifier que la source existe
