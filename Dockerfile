@@ -1,8 +1,13 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+ARG BUILD_FROM=python:3.11-slim
+FROM ${BUILD_FROM}
 
-# Copy data for add-on
-COPY run.sh /
-RUN chmod a+x /run.sh
+RUN apt-get update && apt-get install -y \
+    bash \
+    python3 \
+    python3-pip \
+    && apt-get clean
+
+COPY run.sh /run.sh
+RUN chmod +x /run.sh
 
 CMD [ "/run.sh" ]

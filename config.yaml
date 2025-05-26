@@ -16,8 +16,8 @@ options:
   mqtt_host: "mqtt://localhost"
   mqtt_port: 1883
   mqtt_topic: "frigate/events"
-  mqtt_user: "mqtt-usr"
-  mqtt_password: "BD9juMF2"
+  mqtt_user: "user"
+  mqtt_password: "password"
 schema:
   mqtt_host: str
   mqtt_port: int
