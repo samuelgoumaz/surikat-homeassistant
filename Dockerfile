@@ -6,6 +6,9 @@ RUN apk add --no-cache \
     python3 \
     py3-pip
 
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
