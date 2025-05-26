@@ -1,7 +1,0 @@
-{
-  "mqtt_host": "mqtt://192.168.1.132",
-  "mqtt_port": 1883,
-  "mqtt_topic": "frigate/events",
-  "mqtt_user": "mqtt-usr",
-  "mqtt_password": "BD9juMF2"
-}
