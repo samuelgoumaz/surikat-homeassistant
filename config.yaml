@@ -19,12 +19,14 @@ options:
   mqtt_topic: "frigate/events"
   mqtt_user: "user"
   mqtt_password: "password"
+  default_name: "password"
 schema:
   mqtt_host: str
   mqtt_port: int
   mqtt_topic: str
   mqtt_user: str
   mqtt_password: str
+  default_name: str
 map:
   config:
     target: /config
